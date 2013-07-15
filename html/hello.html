@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>测试文档</title>
+
+</head>
+<body>
+<script type="text/javascript" src="../gallery/sea.js"></script>
+<script type="text/javascript">
+/*seajs.config({
+    alias: {
+        hello: '../hello/hello'
+    }
+});*/
+seajs.use('../dist/common/common',function (c){
+    c.sayHello('hahaha');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@color: #ccc;
+@fontYahei: "Microsoft Yahei";
+#header {color: @color;font-family:@fontYahei;line-height:25px;}
+#header {
+    h2 {color: @color; font-size:12px;}
+    span {float:left;}
+}
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000 ){
+    box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+}
+#header {
+    .box-shadow(2px, 5px);
+}
